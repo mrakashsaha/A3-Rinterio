@@ -14,11 +14,67 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Vanilla CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Custom  Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandColor: '#ABEF5F',
+            lightBlack: '#737373',
+            brandBlack: '#212121',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="manrope">
     <header>
+        <!-- Navbar Start Here -->
+        <nav class="container mx-auto">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start w-2/5">
+              <a class="btn btn-ghost text-xl"><span class="inline-flex bg-brandColor rounded-full w-8 h-8 items-center justify-center"><i class="fa-solid fa-arrow-right font-semibold -rotate-45"></i></span> <span class="text-3xl font-extrabold">Rinterio</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-lightBlack">
+                <li><a class="font-bold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end w-3/5">
+              <ul class="menu hidden md:inline-flex flex-nowrap menu-horizontal space-x-4 px-5"> 
+                <a class="btn btn-circle bg-white"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+              <li><a class="btn btn-circle bg-white"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+              <li><a class="btn rounded-full bg-brandColor text-xl"><span class="text-xl font-extrabold">Book Consult</span><span class="inline-flex bg-[#1E1E1E] rounded-full w-8 h-8 items-center justify-center"><i class="fa-solid fa-arrow-right font-semibold text-white -rotate-45"></i></span></a></li>
+            </ul>
+              <div class="dropdown dropdown-end">
+
+                <div tabindex="0" role="button" class="btn btn-circle bg-white lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                  <li><a class="btn rounded-full bg-brandColor w-3/4"><span class="text-sm font-extrabold">Book Consult</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
     </header>
-    <main></main>
+    <main>
+    </main>
     <footer></footer>
 </body>
 </html>
