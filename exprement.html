@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+.text-image-container {
+    display: flex;
+    align-items: stretch; /* Ensures both items stretch to the container's height */
+}
+
+
+
+.text-image-container img {
+    height: 100%; /* The image height matches the container's height */
+    width: auto;  /* Maintain the image's aspect ratio */
+    margin-left: 10px; /* Optional: Adds space between the text and the image */
+}
+
+
+</style>
+<body>
+    <div class="text-image-container">
+        <div class="text-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque perspiciatis, animi dolorum dolore minus consequatur fugit laudantium sunt eveniet veritatis dicta itaque, nobis saepe hic cum facilis reprehenderit. Repellendus, aut.
+            Repudiandae repellat iste eaque tempore modi odit libero molestias perspiciatis nesciunt asperiores quaerat, rerum esse iusto inventore consequuntur, aliquam placeat dolor maxime omnis sapiente ab ipsum. Libero non aut error!</p>
+        </div>
+        <img src="assets/Rectangle.png" alt="Your Image">
+    </div>
+    
+</body>
+</html>
